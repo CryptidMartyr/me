@@ -1,5 +1,6 @@
 body {
-  background-image:url(images/background.jpeg);
+  background-image:url('images/background.jpeg');
+  background-size:100%,100%;
 }
 p, h1 {
 text-align: center;
