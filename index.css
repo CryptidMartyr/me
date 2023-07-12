@@ -1,5 +1,5 @@
 body {
-  background-image=src"images.background.jpeg";
+  background-image:src"images.background.jpeg";
 }
 p, h1 {
 text-align: center;
