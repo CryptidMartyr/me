@@ -5,5 +5,5 @@ body {
 p, h1, img{
 text-align: center;
 font-family: "Comic Sans";
-font-color: rgb(230, 140, 190);
+color: rgb(230, 140, 190);
 }
