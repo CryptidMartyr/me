@@ -2,11 +2,12 @@ body {
   background-image:url('images/background.jpeg');
   background-size:100%,100%;
 }
-p, h1, h2, img{
+img{
 text-align: center;
-font-family:Comic Sans;
+}
+
+p, h2 {
 color: rgb(150, 230, 45);
 background-color: rgb(100, 60, 135);
 border: 3px solid rgb(160, 50, 135);
-text-align:center;
 }
