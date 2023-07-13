@@ -2,6 +2,7 @@ body {
   background-image:url('images/background.jpeg');
   background-size:100%,100%;
 }
+
 img{
 align-content: center;
 }
@@ -12,4 +13,8 @@ background-color: rgb(100, 60, 135);
 border: 3px solid rgb(160, 50, 135);
 font-family:Comic Sans;
 text-align:center;
+}
+
+div {
+  items-align: center;
 }
