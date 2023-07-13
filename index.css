@@ -7,7 +7,7 @@ a {
   color:rgb(190, 190, 10);
 }
 
-a visited {
+a:visited {
   color:rgb(190, 130, 10);
 }
 
