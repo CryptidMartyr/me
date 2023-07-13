@@ -4,6 +4,9 @@ body {
 }
 p, h1, h2, img{
 text-align: center;
-font-family: "Comic Sans";
-color: rgb(89, 181, 9);
+font-family:Comic Sans;
+color: rgb(150, 230, 45);
+background-color: rgb(100, 60, 135);
+border: 3px solid rgb(160, 50, 135);
+text-align:center;
 }
