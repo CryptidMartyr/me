@@ -2,7 +2,7 @@ body {
   background-image:url('images/background.jpeg');
   background-size:100%,100%;
 }
-p, h1, img{
+p, h1, h2, img{
 text-align: center;
 font-family: "Comic Sans";
 color: rgb(230, 140, 190);
