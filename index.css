@@ -3,5 +3,6 @@ body {
   background-size:100%,100%;
 }
 p, h1, img{
-align: center;
+text-align: center;
+image-algn: center;
 }
