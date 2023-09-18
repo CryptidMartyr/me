@@ -25,10 +25,10 @@ div {
   text-align: center;
 }
 
-.creative {
+#creative {
   text-align:left;
 }
 
-.other {
+#other {
   text-align:right;
 }
