@@ -24,3 +24,11 @@ h1, h2, p {
 div {
   text-align: center;
 }
+
+.creative {
+  text-align:left;
+}
+
+.other {
+  text-align:right;
+}
