@@ -13,7 +13,13 @@ a:visited {
   color:rgb(190, 130, 10);
 }
 
-h2{
+p, h1{
+  color: rgb(150, 230, 45);
+  background-color: rgb(100, 60, 135);
+  border: 3px solid rgb(160, 50, 135);
+}
+
+h2 {
   color: rgb(150, 230, 45);
   background-color: rgb(100, 60, 135);
   border: 3px solid rgb(160, 50, 135);
