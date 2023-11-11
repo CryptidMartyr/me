@@ -25,6 +25,7 @@ div {
 #centerer {
   display:flex;
   justify-content:center;
+  align-items:center;
 }
 #creative {
   text-align:left;
