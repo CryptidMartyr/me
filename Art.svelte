@@ -7,6 +7,14 @@
         width:1000px;
         height:750px;
       }
+    #smallart {
+      overflow: hidden;
+      width: 10px;
+      height: 45px;
+      display: flex;
+      justify-content: center;
+      
+    }
       h1 {
         text-align: left;
       }
@@ -15,20 +23,20 @@
   
   <body>
     <h1>Some of my cool art that i make</h1>
-    <div style="position:bottom">
-    <img src="WebArt1/Asphalt Girl.jpg">
-    <img src="WebArt1/crazy stuff.jpg">
-    <img src="WebArt1/flink and ethany.jpg">
-    <img src="WebArt1/grand old time.jpg">
-    <img src="WebArt1/having some fun.png">
-    <img src="WebArt1/Hey.png">
-    <img src="WebArt1/ive had enough im drawing nepeta.jpg">
-    <img src="WebArt1/koshishish.jpg">
-    <img src="WebArt1/lain.png">
-    <img src="WebArt1/Something fleshed out.png">
-    <img src="WebArt1/winner.jpg">
-    <img src="WebArt1/wonder what this could be.jpg">
-    <img src="WebArt1/Yume Cryptie.png">
+    <div style="display:flex; lustify-content:center;">
+    <div class="smallart"> <img src="WebArt1/Asphalt Girl.jpg"> </div>
+    <div class="smallart"> <img src="WebArt1/crazy stuff.jpg"> </div>
+    <div class="smallart"> <img src="WebArt1/flink and ethany.jpg"> </div>
+    <div class="smallart"> <img src="WebArt1/grand old time.jpg"> </div>
+    <div class="smallart"> <img src="WebArt1/having some fun.png"> </div>
+    <div class="smallart"> <img src="WebArt1/Hey.png"> </div>
+    <div class="smallart"> <img src="WebArt1/ive had enough im drawing nepeta.jpg"> </div>
+    <div class="smallart"> <img src="WebArt1/koshishish.jpg"> </div>
+    <div class="smallart"> <img src="WebArt1/lain.png"> </div>
+    <div class="smallart"> <img src="WebArt1/Something fleshed out.png"> </div>
+    <div class="smallart"> <img src="WebArt1/winner.jpg"> </div>
+    <div class="smallart"> <img src="WebArt1/wonder what this could be.jpg"> </div>
+    <div class="smallart"> <img src="WebArt1/Yume Cryptie.png"> </div>
     </div>
   </body>
 </html>
