@@ -15,6 +15,7 @@
   
   <body>
     <h1>Some of my cool art that i make</h1>
+    <div style="position:bottom">
     <img src="WebArt1/Asphalt Girl.jpg">
     <img src="WebArt1/crazy stuff.jpg">
     <img src="WebArt1/flink and ethany.jpg">
@@ -28,5 +29,6 @@
     <img src="WebArt1/winner.jpg">
     <img src="WebArt1/wonder what this could be.jpg">
     <img src="WebArt1/Yume Cryptie.png">
+    </div>
   </body>
 </html>
