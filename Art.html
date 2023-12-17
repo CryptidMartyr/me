@@ -17,8 +17,8 @@
       }
     </style>
     <script>
-      smallart = document.getElementsByClassName("smallart");
-      addEventListener("mouseover", () => {console.log("im hovered over!");});
+      smallart = document.querySelectorAll("smallart");
+      smallart.addEventListener("mouseover", () => {console.log("im hovered over!");});
     </script>
   </head>
   
