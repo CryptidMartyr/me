@@ -17,8 +17,7 @@
       }
     </style>
     <script>
-      let container = document.getElementById("container");
-      let smallart = container.querySelectorAll("smallart");
+      let smallart = document.querySelectorAll("smallart");
       smallart.forEach((smallartItem) => {smallartItem.addEventListener("mouseover", () => {console.log("im hovered over!");});});
     </script>
   </head>
