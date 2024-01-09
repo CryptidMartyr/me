@@ -51,12 +51,12 @@
         currentValue.addEventListener("mouseover", (event) => {
           currentValue.style.width = "800px";
           currentValue.style.height = "600px";
-          currentValue.style.top = "200px";
+          currentValue.getChildNode().style.top = "200px";
         });
         currentValue.addEventListener("mouseout", (event) => {
           currentValue.style.width = "30px";
           currentValue.style.height = "120px";
-          currentValue.style.top = "0px";
+          currentValue.getChildNode().style.top = "0px";
         });
       });
     </script>
