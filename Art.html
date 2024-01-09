@@ -21,7 +21,6 @@
   
   <body>
     <h1>Some of my cool art that i make</h1>
-    <div></div>
     <div id="container" style="display:flex; justify-content:center; align-items:end;">
     <div class="smallart"> <img src="WebArt1/Asphalt Girl.jpg" style="position:relative;"> </div>
     <div class="smallart"> <img src="WebArt1/crazy stuff.jpg"> </div>
@@ -55,7 +54,7 @@
       const smallart = document.querySelectorAll("div.smallart");
       console.log(smallart.item(0));
       console.log(smallart.item(1));
-      smallart.forEach(() => {console.log("?"); currentValue.addEventListener("mouseover", (event) => {console.log("this should be simple and easy");});});
+      smallart.forEach((currentValue) => {console.log("?"); currentValue.addEventListener("mouseover", (event) => {console.log("this should be simple and easy");});});
     </script>
   </body>
 </html>
