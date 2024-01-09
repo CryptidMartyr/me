@@ -16,12 +16,7 @@
         text-align: left;
       }
     </style>
-    <script>
-      const smallart = document.querySelectorAll("body");
-      console.log(smallart.item(0));
-      console.log(smallart.item(1));
-      smallart.forEach(() => {console.log("?"); currentValue.addEventListener("mouseover", (event) => {console.log("this should be simple and easy");});});
-    </script>
+    
   </head>
   
   <body>
@@ -56,5 +51,11 @@
     <img src="WebArt1/wonder what this could be.jpg">
     <img src="WebArt1/Yume Cryptie.png">
     </div>
+    <script>
+      const smallart = document.querySelectorAll("div.smallart");
+      console.log(smallart.item(0));
+      console.log(smallart.item(1));
+      smallart.forEach(() => {console.log("?"); currentValue.addEventListener("mouseover", (event) => {console.log("this should be simple and easy");});});
+    </script>
   </body>
 </html>
