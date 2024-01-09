@@ -49,14 +49,14 @@
       console.log(smallart.item(1));
       smallart.forEach((currentValue) => {
         currentValue.addEventListener("mouseover", (event) => {
-          currentValue.getChildNode().style.width = "800px";
-          currentValue.getChildNode().style.height = "600px";
-          currentValue.getChildNode().style.top = "200px";
+          currentValue.childNodes.style.width = "800px";
+          currentValue.childNodes.style.height = "600px";
+          currentValue.childNodes.style.top = "200px";
         });
         currentValue.addEventListener("mouseout", (event) => {
-          currentValue.getChildNode().style.width = "30px";
-          currentValue.getChildNode().style.height = "120px";
-          currentValue.getChildNode().style.top = "0px";
+          currentValue.childNodes.style.width = "30px";
+          currentValue.childNodes.style.height = "120px";
+          currentValue.childNodes.style.top = "0px";
         });
       });
     </script>
