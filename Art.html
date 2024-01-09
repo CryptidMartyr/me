@@ -11,8 +11,7 @@
       width:30px;
       height:120px;
       overflow: hidden;
-      display: flex;
-      justify-content: top;
+      position:relative;
     }
       h1 {
         text-align: left;
@@ -56,6 +55,7 @@
         currentValue.addEventListener("mouseout", (event) => {
           currentValue.style.width = "30px";
           currentValue.style.height = "120px";
+          currentValue.style.top = "200px";
         });
       });
     </script>
