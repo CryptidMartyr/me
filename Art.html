@@ -54,7 +54,9 @@
       const smallart = document.querySelectorAll("div.smallart");
       console.log(smallart.item(0));
       console.log(smallart.item(1));
-      smallart.forEach((currentValue) => {console.log("?"); currentValue.addEventListener("mouseover", (event) => {console.log("this should be simple and easy");});});
+      smallart.forEach((currentValue) => {currentValue.addEventListener("mouseover", (event) => {
+        currentValue.width = 38;
+      });});
     </script>
   </body>
 </html>
