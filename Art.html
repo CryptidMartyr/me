@@ -41,10 +41,16 @@
       const smallart = document.querySelectorAll("div.smallart");
       console.log(smallart.item(0));
       console.log(smallart.item(1));
-      smallart.forEach((currentValue) => {currentValue.addEventListener("mouseover", (event) => {
-        currentValue.style.width = "800px";
-        currentValue.style.height = "600px";
-      });});
+      smallart.forEach((currentValue) => {
+        currentValue.addEventListener("mouseover", (event) => {
+          currentValue.style.width = "800px";
+          currentValue.style.height = "600px";
+        });
+        currentValue.addEventListener("mouseout", (event) => {
+          currentValue.style.width = "30px";
+          currentValue.style.height = "120px";
+        });
+      });
     </script>
   </body>
 </html>
