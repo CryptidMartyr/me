@@ -50,14 +50,14 @@
       smallart.forEach((currentValue) => {
         currentValue.addEventListener("mouseover", (event) => {
           console.log(currentValue.childNodes);
-          currentValue.childNodes.style.width = "800px";
-          currentValue.childNodes.style.height = "600px";
-          currentValue.childNodes.style.top = "200px";
+          currentValue.style.width = "800px";
+          currentValue.style.height = "600px";
+          currentValue.style.top = "200px";
         });
         currentValue.addEventListener("mouseout", (event) => {
-          currentValue.childNodes.style.width = "30px";
-          currentValue.childNodes.style.height = "120px";
-          currentValue.childNodes.style.top = "0px";
+          currentValue.style.width = "30px";
+          currentValue.style.height = "120px";
+          currentValue.style.top = "0px";
         });
       });
     </script>
