@@ -17,12 +17,13 @@
       }
     </style>
     <script>
-      console.log("?");
+      
       function preview() {
         console.log("this should be simple and easy"); 
       }
       const smallart = document.querySelectorAll("smallart");
-      smallart.forEach(() => {console.log("?"); currentValue.addEventListener("mouseover", () => {console.log("this should be simple and easy"); }); });
+      console.log(typeof smallart);
+      smallart.forEach(() => {currentValue.addEventListener("mouseover", () => {console.log("this should be simple and easy"); }); });
     </script>
   </head>
   
