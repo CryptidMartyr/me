@@ -6,7 +6,7 @@
       img {
         width:800px;
         height:600px;
-        position:relative;
+        position:absolute;
         display:flex;
       }
     .smallart {
@@ -60,19 +60,17 @@
       smallart.forEach((currentValue, listObj) => {
         currentValue.addEventListener("mouseover", (event) => {
           console.log(currentValue.querySelector("img"));
-          listObj.outerHTML=currentValue;
+          
           currentValue.style.overflow = "visible";
-          currentValue.querySelector("img").style.top = "120px";
-          currentValue.style.width = "800px";
-          currentValue.style.height = "600px";
+          currentValue.querySelector("img").style. = "120px";
+          currentValue.width = "800px";
+          currentValue.height = "600px";
         });
         currentValue.addEventListener("mouseout", (event) => {
-          listObj.innerHTML=currentValue;
-          currentValue.style.width = "30px";
-          currentValue.style.height = "120px";
           currentValue.style.overflow = "hidden";
           currentValue.querySelector("img").style.top = "0px";
-          
+          currentValue.width = "30px";
+          currentValue.height = "120px";
         });
       });
     </script>
