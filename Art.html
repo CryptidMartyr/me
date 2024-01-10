@@ -11,7 +11,7 @@
       width:30px;
       height:120px;
       overflow: hidden;
-      display: flex;
+      position: relative;
     }
       h1 {
         text-align: left;
@@ -58,7 +58,7 @@
       console.log(smallart.item(1));
       smallart.forEach((currentValue) => {
         currentValue.addEventListener("mouseover", (event) => {
-          console.log(currentValue.childNodes);
+          console.log(currentValue.NodeList.item(1));
           currentValue.style.width = "800px";
           currentValue.style.height = "600px";
         });
