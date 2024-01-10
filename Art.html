@@ -6,12 +6,12 @@
       img {
         width:800px;
         height:600px;
+        position:relative;
       }
     .smallart {
       width:30px;
       height:120px;
       overflow: hidden;
-      position: relative;
     }
       h1 {
         text-align: left;
@@ -54,18 +54,16 @@
     </div>
     <script>
       const smallart = document.querySelectorAll("div.smallart");
-      console.log(smallart.item(0));
-      console.log(smallart.item(1));
       smallart.forEach((currentValue) => {
         currentValue.addEventListener("mouseover", (event) => {
           console.log(currentValue.querySelector("img"));
           currentValue.style.width = "800px";
-          currentValue.style.height = "600px";
+          currentValue.querySelector("img").style.top = "300px";
         });
         currentValue.addEventListener("mouseout", (event) => {
           currentValue.style.width = "30px";
           currentValue.style.height = "120px";
-          currentValue.style.top = "0px";
+          currentValue.querySelector("img").style.top = "0px";
         });
       });
     </script>
