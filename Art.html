@@ -13,6 +13,7 @@
       width:30px;
       height:120px;
       overflow: hidden;
+      position:relative;
     }
       h1 {
         text-align: left;
@@ -59,18 +60,19 @@
       smallart.forEach((currentValue) => {
         currentValue.addEventListener("mouseover", (event) => {
           console.log(currentValue.querySelector("img"));
-          currentValue.style.width = "800px";
-          currentValue.style.height = "600px";
+          listObj.outerHTML=currentValue;
           currentValue.style.overflow = "visible";
           currentValue.querySelector("img").style.top = "120px";
-          currentValue.style.offsetPosition = "120px 50%"
+          currentValue.style.width = "800px";
+          currentValue.style.height = "600px";
         });
         currentValue.addEventListener("mouseout", (event) => {
+          listObj.innerHTML=currentValue;
           currentValue.style.width = "30px";
           currentValue.style.height = "120px";
           currentValue.style.overflow = "hidden";
           currentValue.querySelector("img").style.top = "0px";
-          currentValue.style.offsetPosition = "0px 0%"
+          
         });
       });
     </script>
