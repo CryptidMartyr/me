@@ -58,7 +58,7 @@
       console.log(smallart.item(1));
       smallart.forEach((currentValue) => {
         currentValue.addEventListener("mouseover", (event) => {
-          console.log(currentValue(1));
+          console.log(currentValue.NodeList.item(1));
           currentValue.style.width = "800px";
           currentValue.style.height = "600px";
         });
