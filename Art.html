@@ -57,7 +57,7 @@
       
     <script>
       const smallart = document.querySelectorAll("div.smallart");
-      smallart.forEach((currentValue) => {
+      smallart.forEach((currentValue, listObj) => {
         currentValue.addEventListener("mouseover", (event) => {
           console.log(currentValue.querySelector("img"));
           listObj.outerHTML=currentValue;
