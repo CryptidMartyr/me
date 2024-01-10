@@ -59,9 +59,8 @@
       smallart.forEach((currentValue, listObj) => {
         currentValue.addEventListener("mouseover", (event) => {
           console.log(currentValue.querySelector("img"));
-          
           currentValue.style.overflow = "visible";
-          currentValue.querySelector("img").style. = "120px";
+          currentValue.querySelector("img").style.top = "120px";
           currentValue.style.width = "800px";
           currentValue.style.height = "600px";
         });
