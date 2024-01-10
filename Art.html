@@ -63,13 +63,14 @@
           currentValue.style.height = "600px";
           currentValue.style.overflow = "visible";
           currentValue.querySelector("img").style.top = "120px";
-          currentValue.style.justifyContent = "center";
+          currentValue.style.offsetPosition = "120px 50%"
         });
         currentValue.addEventListener("mouseout", (event) => {
           currentValue.style.width = "30px";
           currentValue.style.height = "120px";
           currentValue.style.overflow = "hidden";
           currentValue.querySelector("img").style.top = "0px";
+          currentValue.style.offsetPosition = "0px 0%"
         });
       });
     </script>
