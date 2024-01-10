@@ -6,6 +6,8 @@
       img {
         width:800px;
         height:600px;
+        position:relative;
+        display:flex;
       }
     .smallart {
       width:30px;
@@ -59,6 +61,7 @@
           console.log(currentValue.querySelector("img"));
           currentValue.style.width = "800px";
           currentValue.querySelector("img").style.top = "30px";
+          currentValue.querySelector("img").style.justifyContent = "center";
         });
         currentValue.addEventListener("mouseout", (event) => {
           currentValue.style.width = "30px";
