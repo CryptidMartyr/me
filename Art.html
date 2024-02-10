@@ -94,13 +94,13 @@
           currentValue.style.position = "relative";
           currentValue.querySelector("img").style.position = "relative";
           currentValue.querySelector("img").style.objectPosition = 50% 50%;
+          document.getElementById("frame").appendChild(currentValue.querySelector("img"));
         });
         currentValue.addEventListener("mouseout", (event) => {
           currentValue.style.overflow = "hidden";
           currentValue.style.position = "relative";
           currentValue.style.left = 50%;
-          currentValue.querySelector("img").style.position = "relative";
-          currentValue.querySelector("img").style.objectPosition = 50% 50%;
+          document.getElementById("frame").removeChild();
         });
       });
     </script>
