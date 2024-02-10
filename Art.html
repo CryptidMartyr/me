@@ -23,7 +23,7 @@
     </style>
     
   </head>
-  
+  <div id="frame"></div>
   <body>
     <h1>Some of my cool art that i make. Hover over a square to see the full image!</h1>
     <div class="container">
@@ -88,11 +88,7 @@
       const smallart = document.querySelectorAll("div.smallart");
       smallart.forEach((currentValue, listObj) => {
         currentValue.addEventListener("mouseover", (event) => {
-          console.log(currentValue.querySelector("img"));
-          currentValue.style.overflow = "visible";
-          currentValue.querySelector("img").style.top = "120px";
-          currentValue.style.width = "800px";
-          currentValue.style.height = "600px";
+          document.getElementById("frame").createElement("img, {src: currentValue.querySelector("img").src});
         });
         currentValue.addEventListener("mouseout", (event) => {
           currentValue.style.overflow = "hidden";
