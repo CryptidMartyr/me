@@ -91,13 +91,16 @@
       smallart.forEach((currentValue, listObj) => {
         currentValue.addEventListener("mouseover", (event) => {
           currentValue.style.overflow = "visible";
-          currentValue.querySelector("img").style.objectPosition = "50% 50%";
+          currentValue.style.position = "relative";
           currentValue.querySelector("img").style.position = "relative";
+          currentValue.querySelector("img").style.objectPosition = 50% 50%;
         });
         currentValue.addEventListener("mouseout", (event) => {
           currentValue.style.overflow = "hidden";
-          currentValue.querySelector("img").style.objectPosition = "0% 0%";
+          currentValue.style.position = "relative";
+          currentValue.style.left = 50%;
           currentValue.querySelector("img").style.position = "relative";
+          currentValue.querySelector("img").style.objectPosition = 50% 50%;
         });
       });
     </script>
