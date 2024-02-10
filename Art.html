@@ -8,12 +8,6 @@
         height:600px;
         display:flex;
       }
-    .smallart {
-      width:100px;
-      height:60px;
-      overflow: hidden;
-      position:relative;
-    }
     .container {
       
     }
@@ -25,7 +19,7 @@
   </head>
   <div id="frame"></div>
   <body>
-    <h1>Some of my cool art that i make. Hover over a square to see the full image!</h1>
+    <h1>Some of my cool art that i make</h1>
 <div class="container" style="display:flex;flex-direction:row;justify-content:center;">
     <div class="container" style="display:flex;flex-direction:column;">
     <div class="smallart"><img src="WebArt1/winner.jpg"></div>
@@ -53,7 +47,7 @@
     <div class="smallart"><img src="WebArt1/Something fleshed out.png"></div> 
     </div>
 
-    <div class="container" style="display:flex; flex-direction:column; flex-flow: column wrap-reverse;">
+    <div class="container" style="display:flex; flex-direction:column;">
     <div class="smallart"><img src="WebArt1/WAAAG.jpg"></div>
     <div class="smallart"><img src="WebArt1/carlemNight.jpg"></div> 
     <div class="smallart"><img src="WebArt1/doodles.jpg"></div>
@@ -69,7 +63,7 @@
     <h2>Some more</h2>
 
     <div class="container" >
-      <div class="container" style="display:flex; justify-content:center; align-items:start;">
+      <div class="container" style="display:flex; flex-direction:column;">
         <div class="smallart"><img src="WebArt2/Dark.jpg"></div>
         <div class="smallart"><img src="WebArt2/IMG_0053.jpeg"></div>
         <div class="smallart"><img src="WebArt2/IMG_0068 (1).jpeg"></div>
@@ -81,28 +75,10 @@
         <div class="smallart"><img src="WebArt2/high guy comin thrue.png"></div>
         <div class="smallart"><img src="WebArt2/painting practice.jpg"></div>
       </div>
-      <div class="container  style="display:flex; justify-content:center; align-items:start;">
+      <div class="container  style="display:flex; flex-direction:column;">
         <div class="smallart"><img src="WebArt2/I make my color count.jpg"></div>
       </div>
     </div>
     
-    <script>
-      const smallart = document.querySelectorAll("div.smallart");
-      smallart.forEach((currentValue, listObj) => {
-        currentValue.addEventListener("mouseover", (event) => {
-          currentValue.style.overflow = "visible";
-          currentValue.style.position = "relative";
-          currentValue.querySelector("img").style.position = "relative";
-          currentValue.querySelector("img").style.objectPosition = 50% 50%;
-          document.getElementById("frame").appendChild(currentValue.querySelector("img"));
-        });
-        currentValue.addEventListener("mouseout", (event) => {
-          currentValue.style.overflow = "hidden";
-          currentValue.style.position = "relative";
-          currentValue.style.left = 50%;
-          document.getElementById("frame").removeChild();
-        });
-      });
-    </script>
   </body>
 </html>
