@@ -88,11 +88,14 @@
       const smallart = document.querySelectorAll("div.smallart");
       smallart.forEach((currentValue, listObj) => {
         currentValue.addEventListener("mouseover", (event) => {
-          document.getElementById("frame").createElement("img, {src: currentValue.querySelector("img").src});
+          currentValue.style.overflow = "visible";
+          currentValue.querySelector("img").style.objectPosition = "50% 50%";
+          currentValue.style.width = "120px";
+          currentValue.style.height = "120px";
         });
         currentValue.addEventListener("mouseout", (event) => {
           currentValue.style.overflow = "hidden";
-          currentValue.querySelector("img").style.top = "0px";
+          currentValue.querySelector("img").style.objectPosition = "0% 0%";
           currentValue.style.width = "120px";
           currentValue.style.height = "120px";
         });
