@@ -27,6 +27,7 @@ div {
   align-items:center;
   flex-flow: row wrap;
   width: min-content;
+  align-self: center;
 }
 
 #other {
