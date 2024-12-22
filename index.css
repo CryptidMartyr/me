@@ -26,7 +26,6 @@ div {
   display:flex;
   align-items:center;
   flex-direction:row wrap;
-  width:max-content;
 }
 
 #other {
