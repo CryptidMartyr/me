@@ -25,7 +25,8 @@ div {
 #centerer {
   display:flex;
   align-items:center;
-  flex-flow: row wrap;
+  flex-direction:row wrap;
+  width:50%;
 }
 
 #other {
