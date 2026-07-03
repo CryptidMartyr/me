@@ -1,0 +1,59 @@
+body {
+	background-color: rgb(0, 12, 4);
+}
+
+p, h1, h2, h3 {
+	color: rgb(233, 220, 200);
+	font-family: calibri;
+}
+
+a {
+	color: rgb(244, 125, 100);
+}
+
+#row {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#art {
+	display: flex;
+	flex-flow: column wrap;
+}
+
+#games {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+#music {
+	display: flex;
+	flex-direction: column;
+}
+
+#screenshots {
+	width: 30%;
+	display: flex;
+}
+
+.artwork {
+	width: 30%;
+	margin: 10px;
+}
+
+#contact {
+	display: flex;
+	justify-content: center;
+}
+
+#other {
+	text-align:right;
+}
+
+.hidden {
+	visibility:collapse;
+	height:0px;
+	width:0px;
+}
