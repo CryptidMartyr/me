@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+	<head>
+		<link rel="stylesheet" href="portfolio.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<h1 style="margin:50px;">Maxwell Hecht-Chaneski</h1>
+		
+		<p id="contact">Contact: maxwellhechtc@gmail.com</p>
+		
+		<div id="row">
+			<h2 class="button" id="gamesbutton">Games</button>
+			<h2 class="button" id="artbutton">Art/Animations</button>
+			<h2 class="button" id="musicbutton">Music</button>
+		</div>
+		
+		<div id="games" class="hidden">
+			<div>
+				<h3><a href="https://store.steampowered.com/app/4070600/Dizzys/">Dizzys</a></h3>
+				<p>
+					A surreal bullet hell with 6 bosses, all with their own unique patterns. made in godot as a solo project.
+				</p>
+			</div>
+			<img id="screenshots" src="Portfolio/Games/Dizzys_Screenshot_5.png">
+		</div>
+		
+		<div id="art" class="hidden">
+			<img class="artwork" src="Portfolio/Art/Asphalt Girl.jpg">
+			<img class="artwork" src="Portfolio/Art/crazy stuff.jpg">
+			<img class="artwork" src="Portfolio/Art/flink and ethany.jpg">
+			<img class="artwork" src="Portfolio/Art/grand old time.jpg">
+			<img class="artwork" src="Portfolio/Art/having some fun.png">
+			<img class="artwork" src="Portfolio/Art/Hey.png">
+			<img class="artwork" src="Portfolio/Art/ive had enough im drawing nepeta.jpg">
+			<img class="artwork" src="Portfolio/Art/koshishish.jpg">
+			<img class="artwork" src="Portfolio/Art/lain.png">
+			<img class="artwork" src="Portfolio/Art/Something fleshed out.png">
+			<img class="artwork" src="Portfolio/Art/winner.jpg">
+			<img class="artwork" src="Portfolio/Art/wonder what this could be.jpg">
+			<img class="artwork" src="Portfolio/Art/Yume Cryptie.png">
+			<img class="artwork" src="Portfolio/Art/ENA DAAAAAY.png">
+			<img class="artwork" src="Portfolio/Art/carlem.png">
+			<img class="artwork" src="Portfolio/Art/demon pal.jpg">
+			<img class="artwork" src="Portfolio/Art/Erepow.jpg">
+			<img class="artwork" src="Portfolio/Art/Marching man.png">
+			<img class="artwork" src="Portfolio/Art/WAAAG.jpg">
+			<img class="artwork" src="Portfolio/Art/Illustration2.png">
+			<img class="artwork" src="Portfolio/Art/IBETT.png">
+		</div>
+		
+		<div id="music" class="hidden">
+			<audio controls><source src="Portfolio/Music/Babbel_Trailer_Music_v1.wav" type="audio/wav"></audio>
+			<audio controls><source src="Portfolio/Music/BRushTitleTeamExt2.wav" type="audio/wav"></audio>
+			<audio controls><source src="Portfolio/Music/bullet battlle title card.mp3" type="audio/mp3"></audio>
+			<audio controls><source src="Portfolio/Music/Carlem's Theme.wav" type="audio/wav"></audio>
+			<audio controls><source src="Portfolio/Music/Dizzys_Boss_1.mp3" type="audio/mp3"></audio>
+			<audio controls><source src="Portfolio/Music/The Seven Stars of Sullivy.wav" type="audio/wav"></audio>
+			<audio controls><source src="Portfolio/Music/Music Assignment 3.wav" type="audio/wav"></audio>
+			<audio controls><source src="Portfolio/Music/Title theme for something.wav" type="audio/wav"></audio>
+			<audio controls><source src="Portfolio/Music/e-love-ator.wav" type="audio/wav"></audio>
+			<audio controls><source src="Portfolio/Music/touhou title screen core.mp3" type="audio/mp3"></audio>
+			<audio controls><source src="Portfolio/Music/shadow military_v2.mp3" type="audio/mp3"></audio>
+		</div>
+		
+		<script>
+		console.log(document.querySelector(".gamesbutton"))
+			class Tab {
+				constructor(button, content) {
+					this.button = button;
+					this.content = content;
+					button.addEventListener("click", function (e) {
+						for (const tab of tabs) {
+							if (button == tab.button) {
+								tab.content.className = "shown";
+							}
+							else {
+								tab.content.className = "hidden";
+							}
+						}
+					});
+				}
+				
+			}
+			var tabs = [];
+			tabs.push(
+				new Tab(document.querySelector("#gamesbutton"), document.querySelector("#games")),
+				new Tab(document.querySelector("#artbutton"), document.querySelector("#art")),
+				new Tab(document.querySelector("#musicbutton"), document.querySelector("#music")),
+			)
+		</script>
+	</body>
+</html>
