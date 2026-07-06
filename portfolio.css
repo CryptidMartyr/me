@@ -23,9 +23,9 @@ a {
 }
 
 #art {
-	width: 30%;
-	display: flex;
-	flex-flow: column wrap;
+	column-count: 3;
+	column-width: 100px;
+	column-gap: 0px;
 }
 
 #game {
@@ -54,8 +54,8 @@ a {
 }
 
 .artwork {
-	width: 85%;
 	margin: 10px;
+	width: 95%;
 }
 
 #contact {
@@ -69,10 +69,7 @@ a {
 
 .hidden {
 	visibility:collapse;
-	height:0px;
-	width:0px;
 }
 
 .shown {
-	height:3000px;
 }
