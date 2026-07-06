@@ -69,6 +69,7 @@ a {
 
 .hidden {
 	visibility:collapse;
+	height: 0px;
 }
 
 .shown {
