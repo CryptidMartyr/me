@@ -70,6 +70,7 @@ a {
 .hidden {
 	visibility:collapse;
 	height: 0px;
+	width: 0px;
 }
 
 .shown {
